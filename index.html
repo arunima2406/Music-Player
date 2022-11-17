@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Music Player By Arunima</title>
+    <!-- it is connected to two stylesheets -->
+    
+	<link rel="stylesheet" type="text/css" href="index.css"><!-- this is the main stylesheet, approach:desktop-first -->
+	<link rel="stylesheet" type="text/css" href="index1.css"><!-- this is the style sheet with all the media queries -->
+	<script src="https://kit.fontawesome.com/141b37f1c5.js" crossorigin="anonymous"></script>  <!-- this script is just for font awesome fonts -->
+</head>
+
+<!--body-->
+<body>
+
+	<!-- top navigation bar -->
+	<nav class="navigation">
+
+		<!--This div contains the logo and title of the page-->
+		<div class="title">
+			<div class="website-logo">
+			  <img src="media/logo.jpg">	
+			</div>
+			<div class="website-name">
+				<h2>AG Studio</h2>
+			</div>
+			<div class="favourites">
+				<h4>Favourites</h4>
+			</div>	
+		</div>
+
+		<!-- this is for search bar -->
+		<div class="search-bar">
+		    <div class="search-ico">
+			  <i class="fa-sharp fa-solid fa-magnifying-glass "></i>
+		    </div>
+		    <input type="text" name="search" placeholder="Search">
+		    <div class="mic">
+			  <i class="fa-solid fa-microphone "></i>
+		    </div>
+
+		    <!--notification bell-->
+		    <div class="bell-icon">
+		      <i class="fa-solid fa-2x fa-bell"></i> 
+		    </div>
+		</div>
+
+		<!--profile picture-->
+		<div class="profile-picture">
+			<img src="media\profilepicture.jpg ">
+		</div>
+	</nav>
+
+    <!-- this is the main center part of the page and it is divided into two sections-->
+    <!-- I have separated these sections using the aside tag for each section -->
+	<main>
+
+		<!--first section-->
+		<aside class="aside aside-section">
+
+			<!-- this is for the carousel -->
+			<div class="outer-carousel">
+				<div class="carousel">
+					<img src="media\international new release\inr2.jpg">
+					<img src="media\international new release\inr4.jpg">
+					<img src="media\international new release\inr6.webp">
+				</div>
+			</div>
+
+			<!-- this is the latest release section -->
+			<div class="latestrelease">
+				<h1 style="margin-bottom: 12px;">Latest Release</h1>
+
+                <!-- this is the content of the latest release section -->
+                <!-- it will contain the "cards" -->
+				<div class="latest-release-content">
+
+					<!-- first card -->
+					<div class="card">
+						<div>
+							<img src="media\songs\happier.png">
+							<div class="play-button">
+								<i class="fa-solid fa-play" style="width:45%;height: 45%;display: inline-block;"></i>
+							</div>
+						</div>
+						<div class="song-desc">
+							<h3>Happier</h3>
+							<p>Dec,2022</p>
+						</div>
+						<!-- if someone clicks on the three dots, options will be shown to the user for further action -->
+						<div class="options">
+							<label for="latest-release-checkbox1"><i class="fa-solid fa-ellipsis"></i></label>
+							<input type="checkbox" id ="latest-release-checkbox1">
+							<div class="latest-release-dropdown">
+								<div class="drop-item">
+									<p>Play Now</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Queue</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Playlist</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Get Info</p>
+								</div>
+							</div>
+							<!-- duration of the song -->
+							<p> 3:25 </p>
+						</div>	
+					</div>
+
+					<!-- second card -->
+					<div class="card">
+						<div>
+							<img src="media\songs\havana.png">
+							<div class="play-button">
+								<i class="fa-solid fa-play" style="width:45%;height: 45%;display: inline-block;"></i>
+							</div>
+						</div>
+						<div class="song-desc">
+							<h3>Havana</h3>
+							<p>Dec,2022</p>
+						</div>
+						<div class="options">
+							<label for="latest-release-checkbox2"><i class="fa-solid fa-ellipsis"></i></label>
+							<input type="checkbox" id ="latest-release-checkbox2">
+							<div class="latest-release-dropdown">
+								<div class="drop-item">
+									<p>Play Now</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Queue</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Playlist</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Get Info</p>
+								</div>
+							</div>
+							<p> 3:20 </p>
+						</div>	
+					</div>
+
+					<!-- third card -->
+					<div class="card">
+						<div>
+							<img src="media\songs\labon ko.jpg">
+							<div class="play-button">
+								<i class="fa-solid fa-play" style="width:45%;height: 45%;display: inline-block;"></i>
+							</div>
+						</div>
+						<div class="song-desc">
+							<h3>Labon Ko</h3>
+							<p>Dec,2022</p>
+						</div>
+						<div class="options">
+							<label for="latest-release-checkbox3"><i class="fa-solid fa-ellipsis"></i></label>
+							<input type="checkbox" id ="latest-release-checkbox3">
+							<div class="latest-release-dropdown">
+								<div class="drop-item">
+									<p>Play Now</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Queue</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Playlist</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Get Info</p>
+								</div>
+							</div>
+							<p> 3:35 </p>
+						</div>	
+					</div>
+
+					<!-- fourth card -->
+					<div class="card">
+						<div>
+							<img src="media\songs\lockedaway.jpg">
+							<div class="play-button">
+								<i class="fa-solid fa-play" style="width:45%;height: 45%;display: inline-block;"></i>
+							</div>
+						</div>
+						<div class="song-desc">
+							<h3>Locked Away</h3>
+							<p>Dec,2022</p>
+						</div>
+						<div class="options">
+							<label for="latest-release-checkbox4"><i class="fa-solid fa-ellipsis"></i></label>
+							<input type="checkbox" id ="latest-release-checkbox4">
+							<div class="latest-release-dropdown">
+								<div class="drop-item">
+									<p>Play Now</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Queue</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Playlist</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Get Info</p>
+								</div>
+							</div>
+							<p> 3:30 </p>
+						</div>	
+					</div>
+
+					<!-- fifth card -->
+					<div class="card">
+						<div>
+							<img src="media\songs\nightchanges.jpg">
+							<div class="play-button">
+								<i class="fa-solid fa-play" style="width:45%;height: 45%;display: inline-block;"></i>
+							</div>
+						</div>
+						<div class="song-desc">
+							<h3>Night Changes</h3>
+							<p>Dec,2022</p>
+						</div>
+						<div class="options">
+							<label for="latest-release-checkbox5"><i class="fa-solid fa-ellipsis"></i></label>
+							<input type="checkbox" id ="latest-release-checkbox5">
+							<div class="latest-release-dropdown">
+								<div class="drop-item">
+									<p>Play Now</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Queue</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Playlist</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Get Info</p>
+								</div>
+							</div>
+							<p> 2:55 </p>
+						</div>	
+					</div>
+
+					<!-- sixth card -->
+					<div class="card">
+						<div>
+							<img src="media\songs\rockabye.png">
+							<div class="play-button">
+								<i class="fa-solid fa-play" style="width:45%;height: 45%;display: inline-block;"></i>
+							</div>
+						</div>
+						<div class="song-desc">
+							<h3>Rockabye</h3>
+							<p>Dec,2022</p>
+						</div>
+						<div class="options">
+							<label for="latest-release-checkbox6"><i class="fa-solid fa-ellipsis"></i></label>
+							<input type="checkbox" id ="latest-release-checkbox6">
+							<div class="latest-release-dropdown">
+								<div class="drop-item">
+									<p>Play Now</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Queue</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Playlist</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Get Info</p>
+								</div>
+							</div>
+							<p> 3:19 </p>
+						</div>	
+					</div>
+
+					<!-- seventh card -->
+					<div class="card">
+						<div>
+							<img src="media\songs\sorry.png">
+							<div class="play-button">
+								<i class="fa-solid fa-play" style="width:45%;height: 45%;display: inline-block;"></i>
+							</div>
+						</div>
+						<div class="song-desc">
+							<h3>Sorry</h3>
+							<p>Dec,2022</p>
+						</div>
+						<div class="options">
+							<label for="latest-release-checkbox7"><i class="fa-solid fa-ellipsis"></i></label>
+							<input type="checkbox" id ="latest-release-checkbox7">
+							<div class="latest-release-dropdown">
+								<div class="drop-item">
+									<p>Play Now</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Queue</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Playlist</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Get Info</p>
+								</div>
+							</div>
+							<p> 3:15 </p>
+						</div>	
+					</div>
+
+					<!-- eighth card -->
+					<div class="card">
+						<div>
+							<img src="media\songs\thinkingoutloud.jpg">
+							<div class="play-button">
+								<i class="fa-solid fa-play" style="width:45%;height: 45%;display: inline-block;"></i>
+							</div>
+						</div>
+						<div class="song-desc">
+							<h3>Thinking out Loud</h3>
+							<p>Dec,2022</p>
+						</div>
+						<div class="options">
+							<label for="latest-release-checkbox8"><i class="fa-solid fa-ellipsis"></i></label>
+							<input type="checkbox" id ="latest-release-checkbox8">
+							<div class="latest-release-dropdown">
+								<div class="drop-item">
+									<p>Play Now</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Queue</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Add to Playlist</p>
+								</div>
+								<hr>
+								<div class="drop-item">
+									<p>Get Info</p>
+								</div>
+							</div>
+							<p> 4:05 </p>
+						</div>	
+					</div>
+					
+				</div>
+			</div>
+
+
+            <!-- this is the popular artists section -->
+			<div class="popular-artists">
+				<h1 style="margin-bottom:12px">Popular Artists</h1>
+				<div class="popular-artists-cont">
+
+					<!-- following is the list of artists -->
+                    <!-- first artist -->
+					<a href="playlist.html">
+					<div>
+						<img src="media\popular artists\arianagrande.jpg">
+						<div><i class="fa-solid fa-play"></i></div>
+						<p>Ariana Grande</p>
+					</div>
+					</a>
+
+					<!-- second artist -->
+					<a href="playlist.html">
+					<div>
+						<img src="media\popular artists\ArijitSingh.jpg">
+						<div><i class="fa-solid fa-play"></i></div>
+						<p>Arijit Singh</p>
+					</div>
+					</a>
+
+					<!-- third artist -->
+					<a href="playlist.html">
+					<div>
+						<img src="media\popular artists\armaanmalik.jpg">
+						<div><i class="fa-solid fa-play"></i></div>
+						<p>Armaan Malik</p>
+					</div>
+					</a>
+
+					<!-- fourth artist -->
+					<a href="playlist.html">
+					<div>
+						<img src="media\popular artists\atifaslam.jpg">
+						<div><i class="fa-solid fa-play"></i></div>
+						<p>Atif Aslam</p>
+					</div>
+					</a>
+
+					<!-- fifth artist -->
+					<a href="playlist.html">
+					<div>
+						<img src="media\popular artists\camilacabello.jpg">
+						<div><i class="fa-solid fa-play"></i></div>
+						<p>Camila Cabello</p>
+					</div>
+					</a>
+
+					<!-- sixth artist -->
+					<a href="playlist.html">
+					<div>
+						<img src="media\popular artists\djsnake.jpg">
+						<div><i class="fa-solid fa-play"></i></div>
+						<p>DJ Snake</p>
+					</div>
+					</a>
+
+					<!-- seventh artist -->
+					<a href="playlist.html">
+					<div>
+						<img src="media\popular artists\dualipa.jpg">
+						<div><i class="fa-solid fa-play"></i></div>
+						<p>Dua Lipa</p>
+					</div>
+					</a>
+
+					<!-- eighth artist -->
+					<a href="playlist.html">
+					<div>
+						<img src="media\popular artists\edsheeran.jpg">
+						<div><i class="fa-solid fa-play"></i></div>
+						<p>Ed Sheeran</p>
+					</div>
+					</a>
+
+					<!-- ninth artist -->
+					<a href="playlist.html">
+					<div>
+						<img src="media\popular artists\Justin-Bieber.jpg">
+						<div><i class="fa-solid fa-play"></i></div>
+						<p>Justin Beiber</p>
+					</div>
+					</a>
+
+					<!-- tenth artist -->
+					<a href="playlist.html">
+					<div>
+						<img src="media\popular artists\kk.jpg">
+						<div><i class="fa-solid fa-play"></i></div>
+						<p>KK</p>
+					</div>
+					</a>
+
+					<!-- eleventh artist -->
+					<a href="playlist.html">
+					<div>
+						<img src="media\popular artists\shawnmendes.jpg">
+						<div><i class="fa-solid fa-play"></i></div>
+						<p>Shawn Mendes</p>
+					</div>
+					</a>
+
+					<!-- twelvth artist -->
+					<a href="playlist.html">
+					<div>
+						<img src="media\popular artists\taylorswift.png">
+						<div><i class="fa-solid fa-play"></i></div>
+						<p>Taylor Swift</p>
+					</div>
+					</a>
+				</div>	
+			</div>
+            
+
+            <!-- this is the music themes part, the one with the tri-gradient background -->
+			<div class="music-themes">
+				<div class= "stations">
+					<div id="div1">
+						<div id="div2">
+							<div id="div3">
+								<img src="media/logo.jpg">
+								<p>Stations</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				 <!-- this is the content part of them themes -->
+                <!-- the one which changes colors on hover -->
+				<div class="theme-main">
+					<div class="theme-content">
+						<img src="media\music themes\chill.jpg">
+						<p>Chill</p>
+					</div>
+					<div class="theme-content">
+						<img src="media\music themes\hiphop.jpg">
+						<p>Hip Hop</p>
+					</div>
+					<div class="theme-content">
+						<img src="media\music themes\love.jpeg">
+						<p>Love</p>
+					</div>
+					<div class="theme-content">
+						<img src="media\music themes\Pop.jpg">
+						<p>Pop</p>
+					</div>
+					<div class="theme-content">
+						<img src="media\music themes\retro.jpg">
+						<p>Retro</p>
+					</div>
+					<div class="theme-content">
+						<img src="media\music themes\rock.jpg">
+						<p>Rock</p>
+					</div>
+					<div class="theme-content">
+						<img src="media\music themes\travel.jpg">
+						<p>Travel</p>
+					</div>
+					<div class="theme-content">
+						<img src="media\music themes\workout.jpg">
+						<p>Workout</p>
+					</div>
+				</div>
+			</div>
+            <!-- this is another themes portion, that electronic, party and road theme -->
+			<div class="music-themes-2">
+				<div class="outer-div">
+					<div class="inner-div">
+						<span>Electronic</span>
+					</div>
+				</div>
+				<div class="outer-div">
+					<div class="inner-div">
+						<span>Party</span>
+					</div>
+				</div>
+				<div class="outer-div">
+					<div class="inner-div">
+						<span>RoadTrip</span>
+					</div>
+				</div>
+			</div>
+
+
+            <!-- this div contains the language section of the page -->
+			<div class="language">
+				<h1 class="heading">Latest English</h1>
+				<!-- contents of latest english -->
+				<div class="content">
+					<div>
+						<img src="media\latest english\intentions.jpg">
+						<p>Intentions</p>
+						<p>Aug 30, 2022</p>
+					</div>
+					<div>
+						<img src="media\latest english\letmedownslowly.jpg">
+						<p>Let Me Down Slowly</p>
+						<p>Aug 30, 2022</p>
+					</div>
+					<div>
+						<img src="media\latest english\letmeloveyou.jpg">
+						<p>Let Me Love You</p>
+						<p>Aug 30, 2022</p>
+					</div>
+					<div>
+						<img src="media\latest english\onmyway.jpg">
+						<p>On My Way</p>
+						<p>Aug 30, 2022</p>
+					</div>
+					<div>
+						<img src="media\latest english\peaches.jpg">
+						<p>Peaches</p>
+						<p>Aug 30, 2022</p>
+					</div>
+					<div>
+						<img src="media\latest english\senorita.jpg">
+						<p>Senorita</p>
+						<p>Aug 30, 2022</p>
+					</div>
+				</div>
+			</div>
+
+            <!-- this is the hindi section -->
+			<div class="language">
+				<h1 class="heading">Latest Hindi</h1>
+				 <!-- hindi section contents -->
+				<div class="content">
+					<div>
+						<img src="media\latest hindi\dil.jpg">
+						<p>Dil</p>
+						<p>Aug 30, 2022</p>
+					</div>
+					<div>
+						<img src="media\latest hindi\Kaise-Hua.jpg">
+						<p>Kaise Hua</p>
+						<p>Aug 30, 2022</p>
+					</div>
+					<div>
+						<img src="media\latest hindi\kalank.jpg">
+						<p>Kalank</p>
+						<p>Aug 30, 2022</p>
+					</div>
+					<div>
+						<img src="media\latest hindi\kesariya.jpg">
+						<p>Kesariya</p>
+						<p>Aug 30, 2022</p>
+					</div>
+					<div>
+						<img src="media\latest hindi\lutgaye.jpg">
+						<p>Lut Gaye</p>
+						<p>Aug 30, 2022</p>
+					</div>
+					<div>
+						<img src="media\latest hindi\manike.jpg">
+						<p>Manike</p>
+						<p>Aug 30, 2022</p>
+					</div>
+				</div>
+			</div>
+		</aside> <!-- one aside section is complete -->
+        
+
+        <!-- the page is responsive. please try reducing the width of the page -->
+        <!-- the aside section will collapse and a "more button will be shown to you." -->
+        <!-- clicking on this more button, you will be shown the aside section 2  -->
+        <!-- its position will be absolute at lower resolutions -->
+        <!-- this is the label for that more button -->
+		<label for="more"><i class="fa-regular fa-angles-left"></i>More</label>
+		<input type="checkbox" id="more">
+
+
+        <!-- here starts the section 2 of our page -->
+		<aside class="aside section-2">
+			<div class="heading2">
+				<h1>My Playlist</h1>
+				<h4> <a href="#queue-options">Queue <i class="fa-solid fa-chevron-down" style="font-size: 16px;"></i> </a> </h4>
+			</div>
+
+			<!-- this is the queue box which will be shown when the user clicks on the Queue button -->
+            <!-- it will have 2 options, playlists, favourite songs -->
+			<div class="queueoptions" id="queue-options">
+				 <p><a href="#" style="color:#18191a; font-weight:bolder;">Playlists</a></p>
+                <hr>
+                <p><a href="#" style="color:#18191a; font-weight:bolder;">Favourite songs</a></p>	
+			</div>
+
+			<!-- this is the content of the playlist. it will be dynamic. -->
+			<div class="playlist-content">
+
+				<!-- first playlist item -->
+				<div class="playlist-item">
+					<div class="left-content">
+						<div style="margin-right: 4px; font-family: Arial , Helvetica, sans-serif;"> 01 </div>
+						<div class="coverer">
+							<img src="media\playlist\closer.png">
+							<div class="play-button">
+								<i class="fa-solid fa-play" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div>
+							<div>Closer</div>
+							<p>The Chainsmokers</p>
+						</div>
+					</div>
+					<!-- like button -->
+					<div class="right-content">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+
+				<!-- second playlist item -->
+				<div class="playlist-item">
+					<div class="left-content">
+						<div style="margin-right: 4px; font-family:Arial , Helvetica, sans-serif;"> 02 </div>
+						<div class="coverer">
+							<img src="media\playlist\excuses.jpg">
+							<div class="play-button">
+								<i class="fa-solid fa-play" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div>
+							<div>Excuse</div>
+							<p>AP Dhillon</p>
+						</div>
+					</div>
+					<div class="right-content">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+
+				<!-- third playlist item -->
+				<div class="playlist-item">
+					<div class="left-content">
+						<div style="margin-right: 4px;font-family:Arial , Helvetica, sans-serif;"> 03 </div>
+						<div class="coverer">
+							<img src="media\playlist\heatwaves.png">
+							<div class="play-button">
+								<i class="fa-solid fa-play" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div>
+							<div>Heat Waves</div>
+							<p>Glass Animals</p>
+						</div>
+					</div>
+					<div class="right-content">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+
+				<!-- fourth playlist item -->
+				<div class="playlist-item">
+					<div class="left-content">
+						<div style="margin-right: 4px;font-family:Arial , Helvetica, sans-serif;"> 04 </div>
+						<div class="coverer">
+							<img src="media\playlist\lovemelikeyoudo.jpg">
+							<div class="play-button">
+								<i class="fa-solid fa-play" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div>
+							<div>Love Me Like You Do</div>
+							<p>Ellie Goulding</p>
+						</div>
+					</div>
+					<div class="right-content">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+
+				<!-- fifth playlist item -->
+				<div class="playlist-item">
+					<div class="left-content">
+						<div style="margin-right: 4px;font-family:Arial , Helvetica, sans-serif;"> 05 </div>
+						<div class="coverer">
+							<img src="media\playlist\Love-Nwantiti.jpg">
+							<div class="play-button">
+								<i class="fa-solid fa-play" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div>
+							<div>Love Nwantiti</div>
+							<p>CKay</p>
+						</div>
+					</div>
+					<div class="right-content">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+
+				<!-- sixth playlist item -->
+				<div class="playlist-item">
+					<div class="left-content">
+						<div style="margin-right: 4px;font-family:Arial , Helvetica, sans-serif;"> 06 </div>
+						<div class="coverer">
+							<img src="media\playlist\merijaan.jpg">
+							<div class="play-button">
+								<i class="fa-solid fa-play" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div>
+							<div>Meri Jaan</div>
+							<p>Neeti Mohan</p>
+						</div>
+					</div>
+					<div class="right-content">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+
+				<!-- seventh playlist item -->
+				<div class="playlist-item">
+					<div class="left-content">
+						<div style="margin-right: 4px;font-family:Arial , Helvetica, sans-serif;"> 07 </div>
+						<div class="coverer">
+							<img src="media\playlist\perfect.jpg">
+							<div class="play-button">
+								<i class="fa-solid fa-play" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div>
+							<div>Perfect</div>
+							<p>Ed Sheeran</p>
+						</div>
+					</div>
+					<div class="right-content">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+
+				<!-- eighth playlist item -->
+				<div class="playlist-item">
+					<div class="left-content">
+						<div style="margin-right: 4px;font-family:Arial , Helvetica, sans-serif;"> 08 </div>
+						<div class="coverer">
+							<img src="media\playlist\rangi-sari.jpg">
+							<div class="play-button">
+								<i class="fa-solid fa-play" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div>
+							<div>Rang Saari</div>
+							<p>Kavita Seth</p>
+						</div>
+					</div>
+					<div class="right-content">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+
+				<!-- ninth playlist item -->
+				<div class="playlist-item">
+					<div class="left-content">
+						<div style="margin-right: 4px;font-family:Arial , Helvetica, sans-serif;"> 09 </div>
+						<div class="coverer">
+							<img src="media\playlist\ranjha.jpg">
+							<div class="play-button">
+								<i class="fa-solid fa-play" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div>
+							<div>Ranjha</div>
+							<p>Jasleen Royal</p>
+						</div>
+					</div>
+					<div class="right-content">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+
+				<!-- tenth playlist item -->
+				<div class="playlist-item">
+					<div class="left-content">
+						<div style="margin-right: 4px;font-family:Arial , Helvetica, sans-serif;"> 10 </div>
+						<div class="coverer">
+							<img src="media\playlist\shapeofyou.png">
+							<div class="play-button">
+								<i class="fa-solid fa-play" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div>
+							<div>Shape Of You</div>
+							<p>Ed Sheeran</p>
+						</div>
+					</div>
+					<div class="right-content">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+
+				<!-- eleventh playlist item -->
+				<div class="playlist-item">
+					<div class="left-content">
+						<div style="margin-right: 4px;font-family:Arial , Helvetica, sans-serif;"> 11 </div>
+						<div class="coverer">
+							<img src="media\playlist\Stay.png">
+							<div class="play-button">
+								<i class="fa-solid fa-play" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div>
+							<div>Stay</div>
+							<p>Justin Bieber</p>
+						</div>
+					</div>
+					<div class="right-content">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+
+				<!-- twelvth playlist item -->
+				<div class="playlist-item">
+					<div class="left-content">
+						<div style="margin-right: 4px;font-family:Arial , Helvetica, sans-serif;"> 12 </div>
+						<div class="coverer">
+							<img src="media\playlist\unstoppable.jpg">
+							<div class="play-button">
+								<i class="fa-solid fa-play" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div>
+							<div>Unstoppable</div>
+							<p>Sia</p>
+						</div>
+					</div>
+					<div class="right-content">
+						<i class="fa-solid fa-heart"></i>
+					</div>
+				</div>
+			</div>	
+		</aside>
+	</main>
+    <!-- main part of the page is over. -->
+
+    <!-- this is the footer part. -->
+    <!-- its position will be fixed to the screen bottom. -->
+	<footer>
+		<div class="active-song-desc">
+			<div id="song-image">
+				<img src="media\playlist\you.png">	
+			</div>
+			<div class="song-desc">
+				<div>You</div>
+				<div>Armaan Malik</div>
+			</div>
+			<div class="heart-and-ban-icon">
+				<span><i class="fa-solid fa-heart"></i></span>
+				<span><i class="fa-solid fa-ban"></i></span>
+			</div>
+		</div>
+		<!-- these are the main player controls -->
+		<div class="player">
+			<div class="controls">
+				<div><i class="fa-solid fa-shuffle"></i></div>
+				<div><i class="fa-solid fa-backward-step"></i></div>
+				<div><i class="fa-regular fa-circle-pause"></i></div>
+				<div><i class="fa-solid fa-forward-step"></i></div>
+				<div><i class="fa-solid fa-repeat"></i></div>
+			</div>
+			<div id="slider">
+				<div class="time">
+					00:00
+				</div>
+				<div class="slide-contnr">
+					<input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+				</div>
+				<div class="time">
+					03:14
+				</div>
+			</div>
+		</div>
+
+		<!-- other icons including the volume slider and all -->
+		<div class="additional-buttons">
+			<div><i class="fa-solid fa-list"></i></div>
+            <div><i class="fa-solid fa-laptop"></i></div>
+            <div><i class="fa-solid fa-volume-up"></i></div>
+            <div class="slide-contnr" style="width:30%">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top: 0px;">
+            </div>
+            <div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+		</div>
+	</footer>
+
+</body>
+</html>
